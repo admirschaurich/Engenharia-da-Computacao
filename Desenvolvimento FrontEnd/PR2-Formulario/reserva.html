@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <h1>Formulário de Reserva de Viagem</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Serviços Desejados</legend>
+            <div>
+                <label><input type="checkbox" name="servicos" value="compra_passagens"> Compra de Passagens</label>
+                <label><input type="checkbox" name="servicos" value="reserva_hospedagem"> Reserva de Hospedagem</label>
+                <label><input type="checkbox" name="servicos" value="aluguel_veiculos"> Aluguel de Veículos</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <div>
+                <label><input type="radio" name="pagamento" value="cartao_credito" required> Cartão de Crédito</label>
+                <label><input type="radio" name="pagamento" value="boleto"> Boleto</label>
+                <label><input type="radio" name="pagamento" value="pix"> PIX</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Prazo de Pagamento</legend>
+            <div>
+                <label for="prazo">Escolha o prazo de pagamento:</label>
+                <select id="prazo" name="prazo">
+                    <option value="avista">À Vista</option>
+                    <option value="cinco_vezes">Cinco Vezes Sem Juros</option>
+                    <option value="dez_vezes">Dez Vezes Com Juros</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observações Adicionais</legend>
+            <div>
+                <label for="observacoes">Por favor, adicione quaisquer observações ou requisitos especiais:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Digite suas observações aqui..."></textarea>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar Reserva">
+        </div>
+    </form>
+</body>
+</html>
