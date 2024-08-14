@@ -15,8 +15,6 @@ const rl = readline.createInterface({
 rl.question('Digite a opção desejada: café, leite ou chá: ', (option) => {
     let value = 0;
 
-    console.log(option.trim());
-
     switch (option.trim()) {
         case 'café':
             value = 7;
