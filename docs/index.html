@@ -27,18 +27,32 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    body {
+            padding-top: 70px; /* Ajuste conforme a altura do alerta */
+            margin: 0;
+        }
+
+    .alert-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1050;
+    }
+
+    .content {
+        padding-top: 70px;
+    }
+</style>
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
+<body class="index-page" style="margin-top: 100px;">
+  <div class="alert alert-danger alert-dismissible fade show alert-fixed" role="alert">
+    <strong>Atenção!</strong> Os dados contidos nessa página são meramente ilustrativos, pois essa página é apenas uma entrega para um trabalho da faculdade de Engenharia da Computação, onde o objetivo era apenas publicar uma página de perfil usando o Github Pages.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+  <header id="header" class="header dark-background d-flex flex-column"  style="margin-top: 50px;">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
@@ -70,8 +84,7 @@
 
   </header>
 
-  <main class="main">
-
+  <main class="main" >
     <section id="hero" class="hero section dark-background">
 
       <img src="assets/img/profile-bg.png" alt="" data-aos="fade-in" class="">
